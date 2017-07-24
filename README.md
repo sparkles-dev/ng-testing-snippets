@@ -1,1 +1,2 @@
-# ng-testing-snippets
+Angular Testing Snippets
+========================
