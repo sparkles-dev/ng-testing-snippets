@@ -1,0 +1,7 @@
+{
+  "players": [
+    { "id": "tony", "name": "Tony Parker", "birthday": "1982-05-17", "trademarks": ["Spin Move", "Circus Shots", "Layups"] },
+    { "id": "manu", "name": "Manu Ginobili", "birthday": "1977-07-28", "trademarks": ["Clutch Plays"] },
+    { "id": "xabi", "name": "Xabi Alonso", "birthday": "1981-11-25", "trademarks": ["Passing", "Long-Range Passing", "Goals from half-way line"] }
+  ]
+}

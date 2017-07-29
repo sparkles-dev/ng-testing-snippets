@@ -1,0 +1,9 @@
+<div *ngIf="who">
+
+  <h4>{{ who.name }}</h4>
+  <p>Born on: {{ who.birthday }}</p>
+
+  <ul>
+    <li *ngFor="let trademark of who?.trademarks">{{ trademark }}</li>
+  </ul>
+</div>
