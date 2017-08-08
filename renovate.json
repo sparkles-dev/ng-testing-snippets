@@ -1,7 +1,8 @@
 {
   "pinVersions": false,
   "semanticCommits": true,
-  "semanticPrefix": "chore: ",
+  "semanticPrefix": "chore:",
+  "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
   "packages": [
     {
       "packagePattern": "^@angular\/.*",
