@@ -4,17 +4,17 @@ import { HttpModule } from '@angular/http';
 import { ComplexFeatureModule } from './complex-feature/complex-feature.module';
 import { AppComponent } from './app.component';
 import { FeatureService } from './http/http-feature.service';
-import { NumberComponent } from './component/number.component';
+import { NumberModule } from './component/number.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NumberComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    ComplexFeatureModule.forRoot()
+    ComplexFeatureModule.forRoot(),
+    NumberModule
   ],
   providers: [
     FeatureService
