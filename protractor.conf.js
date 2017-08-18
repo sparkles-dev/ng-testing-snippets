@@ -31,8 +31,6 @@ exports.config = {
     strict: true,
     // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
     format: [
-      'pretty',
-      'pretty:e2e/reports/summary.txt',
       'json:e2e/reports/summary.json'
     ],
     // <boolean> invoke formatters without executing steps
