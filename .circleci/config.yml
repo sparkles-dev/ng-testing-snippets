@@ -29,8 +29,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
+      # run unit tests!
       - run: xvfb-run -a yarn ci:test
+
+      # run e2e tests!
+      - run: xvfb-run -a yarn ci:e2e
 
       # run deployments for git tags
       - deploy:

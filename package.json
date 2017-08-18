@@ -13,7 +13,8 @@
     "pree2e": "yarn jsonserver:start",
     "e2e": "ng e2e --proxy-conf proxy.conf.json --aot --prod",
     "poste2e": "yarn jsonserver:stop",
-    "ci:test": "ng test --single-run --code-coverage"
+    "ci:test": "ng test --single-run --code-coverage",
+    "ci:e2e": "yarn e2e"
   },
   "private": true,
   "dependencies": {

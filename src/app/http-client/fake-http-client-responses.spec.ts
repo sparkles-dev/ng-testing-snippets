@@ -53,7 +53,7 @@ describe(`FakeHttpClientResponses`, () => {
       backend.match('/foo');
   })));
 
-  it(`should fail when verifying an un-matched request`, async(inject([HttpClient, HttpTestingController],
+  xit(`should fail when verifying an un-matched request`, async(inject([HttpClient, HttpTestingController],
     (http: HttpClient, backend: HttpTestingController) => {
       http.get('/foo/bar').subscribe();
 
@@ -61,14 +61,14 @@ describe(`FakeHttpClientResponses`, () => {
       backend.verify();
   })));
 
-  it(`should fail when not sending an expected request`, async(inject([HttpClient, HttpTestingController],
+  xit(`should fail when not sending an expected request`, async(inject([HttpClient, HttpTestingController],
     (http: HttpClient, backend: HttpTestingController) => {
       http.get('/foo/bar').subscribe();
 
       backend.expectOne('/foo');
   })));
 
-  it(`should fail when sending an non-expected request`, async(inject([HttpClient, HttpTestingController],
+  xit(`should fail when sending an non-expected request`, async(inject([HttpClient, HttpTestingController],
     (http: HttpClient, backend: HttpTestingController) => {
       http.get('/foo/bar').subscribe();
 
