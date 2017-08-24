@@ -44,7 +44,7 @@
     "codelyzer": "~3.1.1",
     "cucumber": "^3.0.0",
     "forever": "^0.15.3",
-    "jasmine-core": "~2.7.0",
+    "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.0",
     "json-schema-faker": "^0.4.3",
     "json-server": "^0.12.0",
