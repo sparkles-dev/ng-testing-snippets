@@ -1,5 +1,5 @@
 import { TestBed, async, inject } from '@angular/core/testing';
-import { HttpClientModule, HttpRequest } from '@angular/common/http';
+import { HttpClientModule, HttpRequest, HttpParams } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpClientFeatureService } from './http-client-feature.service';
 
@@ -26,10 +26,14 @@ describe(`HttpClientFeatureService`, () => {
       service.login('foo', 'bar').subscribe();
 
       backend.expectOne((req: HttpRequest<any>) => {
-        return req.url === 'auth/login' &&
-          req.method === 'POST' &&
-          req.headers.get('Content-Type') === 'application/x-www-form-urlencoded';
-      }, 'Login Request');
+        const body = new HttpParams({ fromString: req.body });
+
+        return req.url === 'auth/login'
+          && req.method === 'POST'
+          && req.headers.get('Content-Type') === 'application/x-www-form-urlencoded'
+          && body.get('user') === 'foo'
+          && body.get('password') === 'bar';
+      }, `POST to 'auth/login' with form-encoded user and password`);
   })));
 
   it(`should emit 'false' for 401 Unauthorized`, async(inject([HttpClientFeatureService, HttpTestingController],

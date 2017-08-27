@@ -11,12 +11,12 @@ export class HttpClientFeatureService {
   ) {}
 
   login(user: string, password: string): Observable<boolean> {
-    const body = new HttpParams();
-    body.set(`user`, user);
-    body.set(`password`, password);
+    const body = new HttpParams()
+      .set(`user`, user)
+      .set(`password`, password);
     const headers = new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' });
 
-    return this.http.post(`auth/login`, body.toString, { headers, observe: 'response' })
+    return this.http.post(`auth/login`, body.toString(), { headers, observe: 'response' })
       .map((res: HttpResponse<Object>) => res.ok)
       .catch((err: any) => Observable.of(false));
   }
