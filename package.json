@@ -58,7 +58,7 @@
     "protractor": "~5.2.0",
     "protractor-cucumber-framework": "^4.0.0",
     "ts-node": "~3.3.0",
-    "tslint": "~5.7.0",
+    "tslint": "~5.8.0",
     "typescript": "~2.5.0"
   }
 }
