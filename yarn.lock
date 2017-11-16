@@ -32,14 +32,14 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/cli@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.5.0.tgz#2abc3ff1648d54ad4a14f82f9d517f371370406c"
+"@angular/cli@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.5.1.tgz#28b6f31c2657e781cbab3a01c8bdcbd0596f67f3"
   dependencies:
     "@angular-devkit/build-optimizer" "~0.0.31"
     "@angular-devkit/schematics" "~0.0.34"
     "@ngtools/json-schema" "1.1.0"
-    "@ngtools/webpack" "1.8.0"
+    "@ngtools/webpack" "1.8.1"
     "@schematics/angular" "~0.1.0"
     autoprefixer "^6.5.3"
     chalk "~2.2.0"
@@ -64,6 +64,7 @@
     license-webpack-plugin "^1.0.0"
     lodash "^4.11.1"
     memory-fs "^0.4.1"
+    minimatch "^3.0.4"
     node-modules-path "^1.0.0"
     nopt "^4.0.1"
     opn "~5.1.0"
@@ -160,9 +161,9 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
 
-"@ngtools/webpack@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-1.8.0.tgz#443204e016aa3a287544eacadb4c95964ae6e2c4"
+"@ngtools/webpack@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-1.8.1.tgz#00cb0fa7ae0c8ca5ede8e49e8916e73f417fddae"
   dependencies:
     chalk "~2.2.0"
     enhanced-resolve "^3.1.0"
